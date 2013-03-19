@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gambit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  <script src="../lib/gambit.js" type="application/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="../lib/gambit.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <script>
+    window.onload = Gambit.init;
+  </script>
+</head>
+  <body>
+
+    <div id="animations" class="card current">
+      <div class="header">
+        <a class="left" href="#menu">menu</a>
+        <h1>Gambit</h1>
+        <a class="right" href="#">foo</a>
+      </div>
+      <div class="container">
+        <ul class="grouped">
+          <li><a href="#">Gastown</a></li>
+          <li><a href="#">Yaletown</a></li>
+          <li><a href="#">East Van</a></li>
+          <li><a href="#">West End</a></li>
+        </ul>
+        <a href="#hello" class="btn btn-blue">Stage Left</a>
+        <a href="#toast" class="btn btn-yellow">Pop Up</a>
+        <a href="#list" class="btn btn-green">Flip!</a>
+      </div>
+    </div>
+    
+    <div id="menu" class="card anim-reveal">
+      <div class="container">
+        <a href="#animations" class="btn blue large awesome back">That was nice</a>
+        <ul>
+          <li><a href="#">Gastown</a></li>
+          <li><a href="#">Yaletown</a></li>
+          <li><a href="#">East Van</a></li>
+          <li><a href="#">West End</a></li>
+        </ul>
+      </div>
+    </div>
+        
+    <div id="hello" class="card anim-swipe">
+      <div class="container">
+        <a href="#animations" class="btn blue large awesome back">That was nice</a>
+        <ul class="grouped">
+          <li><a href="#">Gastown</a></li>
+          <li><a href="#">Yaletown</a></li>
+          <li><a href="#">East Van</a></li>
+          <li><a href="#">West End</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="toast" class="card anim-toaster">
+      <div class="container">
+        <a href="#animations" class="btn red large awesome back">Toast is Ready</a>
+      </div>
+    </div>
+
+    <div id="list" class="card anim-flip">
+      <div class="container">
+        <a href="#animations" class="btn yellow large awesome back">Done</a>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -4,7 +4,6 @@
   <title>Gambit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  
   <script src="../lib/gambit.js" type="application/javascript" charset="utf-8"></script>
   <link rel="stylesheet" href="../lib/gambit.css" type="text/css" media="screen" title="no title" charset="utf-8">
   <script>
@@ -13,11 +12,11 @@
 </head>
   <body>
 
-    <div id="animations" class="card current">
+    <div id="main" class="card current">
       <div class="header">
         <a class="left" href="#menu">menu</a>
         <h1>Gambit</h1>
-        <a class="right" href="#">foo</a>
+        <a class="right" href="#about">foo</a>
       </div>
       <div class="container">
         <ul class="grouped">
@@ -34,19 +33,18 @@
     
     <div id="menu" class="card anim-reveal">
       <div class="container">
-        <a href="#animations" class="btn blue large awesome back">That was nice</a>
-        <ul>
-          <li><a href="#">Gastown</a></li>
-          <li><a href="#">Yaletown</a></li>
-          <li><a href="#">East Van</a></li>
-          <li><a href="#">West End</a></li>
+        <ul class="grouped">
+          <li><a href="#main">Gastown</a></li>
+          <li><a href="#main">Yaletown</a></li>
+          <li><a href="#main">East Van</a></li>
+          <li><a href="#main">West End</a></li>
         </ul>
       </div>
     </div>
         
-    <div id="hello" class="card anim-swipe">
+    <div id="about" class="card anim-swipe">
       <div class="container">
-        <a href="#animations" class="btn blue large awesome back">That was nice</a>
+        <a href="#main" class="btn blue large back">That was nice</a>
         <ul class="grouped">
           <li><a href="#">Gastown</a></li>
           <li><a href="#">Yaletown</a></li>
